@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="portfolio">
+    <main>
+      <header>
+        <h1>Edison Freire</h1>
+        <p>Computer Science Student</p>
+        <img src="images/headshot-nobackground copy.png">
+      </header>
+      <hr>
+      <section>
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Edison, a developer based in Brooklyn, NY. I'm currently a sophomore at Hunter College majoring in
+          computer science and minoring in mathematics. Programming is a huge passion of mine and I hope to make a
+          career of it.
+        </p>
+      </section>
+      <hr>
+      <section>
+        <h2>Portfolio</h2>
+      </section>
+      <hr>
+      <section>
+        <h2>Contact Me</h2>
+        <form id="contact-form" name="contactform" action="mailto:edisonfreire14@gmail.com">
+
+          <label for="name"><input type="text" id="name" name="name" placeholder="Name" required></label>
+
+          <label for="email"><input type="email" id="email" name="email" placeholder="Your E-mail" required></label>
+
+          <label for="message"><textarea name="message" id="message" cols="30" rows="10"
+              placeholder="Your Message Here..." required></textarea></label>
+
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script type="text/javascript">      (function () {
+    emailjs.init("eqCEta7b09W_b0p4v");
+  })();
+</script>
+
+<script>
+  // listen to the form submission
+  const form = document.getElementById("contact-form");
+
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const serviceID = "service_zzuvhx8";
+      const templateID = "template_dyuf6l8";
+
+      // send the email here
+      emailjs.sendForm(serviceID, templateID, this).then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("SUCCESS!");
+          form.reset();
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          alert("FAILED...", error);
+        }
+      );
+    });
+</script>
+
+</html>
