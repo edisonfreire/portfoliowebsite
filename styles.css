@@ -35,7 +35,16 @@ section p {
   margin-right: auto;
 }
 
-img {
+.logo-container {
+  text-align: center;
+}
+
+.logo {
+  width: 40px;
+  margin: 0 20px;
+}
+
+.headshot {
   display: block;
   width: 35%;
   margin-left: auto;
