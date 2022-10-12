@@ -1,5 +1,5 @@
 body {
-  font-family: Tahoma, serif;
+  font-family: Tahoma, sans-serif;
 }
 
 .portfolio {
@@ -61,4 +61,8 @@ select {
   width: 100%;
   font-family: Tahoma, serif;
   font-size: 16px;
+}
+
+.alert {
+  display: none;
 }

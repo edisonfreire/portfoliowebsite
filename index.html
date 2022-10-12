@@ -43,6 +43,7 @@
 
           <input type="submit" value="Submit">
         </form>
+        <p id="alert" class="alert">Success</p>
       </section>
     </main>
   </div>
@@ -58,7 +59,8 @@
 <script>
   // listen to the form submission
   const form = document.getElementById("contact-form");
-
+  const tag = document.getElementById('alert');
+  const button = document.querySelector('button');
   document
     .getElementById("contact-form")
     .addEventListener("submit", function (event) {
@@ -72,6 +74,7 @@
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           alert("SUCCESS!");
+          tag.classList.toggle('alert')
           form.reset();
         },
         (error) => {
