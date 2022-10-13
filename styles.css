@@ -29,6 +29,12 @@ p {
   font-size: 18px;
 }
 
+hr {
+  height: 2px;
+  background-color: black;
+  border-color: black;
+}
+
 section p {
   max-width: 90%;
   margin-left: auto;
