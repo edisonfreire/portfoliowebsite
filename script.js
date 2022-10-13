@@ -1,12 +1,3 @@
-function recaptchaCallback() {
-  const btnSubmit = document.getElementById("button");
-
-  if (btnSubmit.classList.contains("none")) {
-    btnSubmit.classList.toggle('button')
-  }
-}
-
-
 const form = document.getElementById("contact-form");
 const tag = document.getElementById('success-alert');
 const tag2 = document.getElementById('failure-alert');
