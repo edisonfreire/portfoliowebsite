@@ -47,6 +47,8 @@
           <label for="message"><textarea name="message" id="message" cols="30" rows="10"
               placeholder="Your Message Here..." required></textarea></label>
 
+          <div class="g-recaptcha" data-sitekey="6LegNXgiAAAAAG7IektAt11Tws96ik_QVeHhvTEs"></div>
+
           <input type="submit" value="Submit">
         </form>
         <p id="success-alert" class="success-alert">Success</p>
@@ -55,6 +57,7 @@
     </main>
   </div>
 </body>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
