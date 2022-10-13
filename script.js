@@ -1,5 +1,6 @@
 const form = document.getElementById("contact-form");
-const tag = document.getElementById('alert');
+const tag = document.getElementById('success-alert');
+const tag2 = document.getElementById('failure-alert');
 const button = document.querySelector('button');
 document
   .getElementById("contact-form")
@@ -14,12 +15,13 @@ document
       (response) => {
         console.log("SUCCESS!", response.status, response.text);
         alert("SUCCESS!");
-        tag.classList.toggle('alert')
+        tag.classList.toggle('success-alert');
         form.reset();
       },
       (error) => {
         console.log("FAILED...", error);
         alert("FAILED...", error);
+        tag2.classList.toggle('failure-alert');
       }
     );
   });
