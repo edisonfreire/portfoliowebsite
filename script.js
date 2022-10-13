@@ -1,3 +1,18 @@
+$("form").submit(function (event) {
+  var recaptcha = $("#g-recaptcha-response").val();
+  if (recaptcha === "") {
+    event.preventDefault();
+    alert("Please check the recaptcha");
+  }
+});
+
+if (grecaptcha.getResponse() == "") {
+  alert("You can't proceed!");
+} else {
+  alert("Thank you");
+}
+
+
 const form = document.getElementById("contact-form");
 const tag = document.getElementById('success-alert');
 const tag2 = document.getElementById('failure-alert');
