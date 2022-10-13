@@ -1,15 +1,9 @@
-$("form").submit(function (event) {
-  var recaptcha = $("#g-recaptcha-response").val();
-  if (recaptcha === "") {
-    event.preventDefault();
-    alert("Please check the recaptcha");
-  }
-});
+function recaptchaCallback() {
+  const btnSubmit = document.getElementById("button");
 
-if (grecaptcha.getResponse() == "") {
-  alert("You can't proceed!");
-} else {
-  alert("Thank you");
+  if (btnSubmit.classList.contains("none")) {
+    btnSubmit.classList.toggle('button')
+  }
 }
 
 

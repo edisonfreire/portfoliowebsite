@@ -72,6 +72,10 @@ select {
   font-size: 16px;
 }
 
+.button {
+  display: none;
+}
+
 .success-alert {
   display: none;
 }
