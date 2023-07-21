@@ -2,67 +2,141 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://kit.fontawesome.com/342a54569f.js" crossorigin="anonymous"></script>
+    <title>Edison Freire's Portfolio</title>
 </head>
 
 <body>
-  <div class="portfolio">
-    <main>
-      <header>
-        <h1>Edison Freire</h1>
-        <p>Computer Science Student</p>
-        <div class="logo-container">
-          <a href="https://github.com/edisonfreire"><img class="logo" src="images/github.png"></a>
-          <a href="https://www.linkedin.com/in/edison-freire-434833206/"><img class="logo"
-              src="images/linkedin.png"></a>
-        </div>
-        <img class="headshot" src="images/headshot-nobackground copy.png">
-      </header>
-      <hr>
-      <section>
-        <h2>About Me</h2>
+    <nav>
+        <ul>
+            <li>
+                <h1>
+                    <a href="index.html"><span class="fas fa-code" aria-hidden="true"></span> Edison
+                        Freire</a>
+                </h1>
+            </li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li>
+                <a href="https://www.linkedin.com/in/edison-freire-434833206/" target="_blank">
+                    <span class="fab fa-linkedin" aria-hidden="true"></span>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/edisonfreire" target="_blank">
+                    <span class="fab fa-github-square" aria-hidden="true"></span>
+                    <span class="sr-only">Github</span>
+                </a>
+            </li>
+            <li>
+                <a href="./Resume-1.pdf" target="_blank"
+                    class="button">Resume</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="intro">
+        <p class="name">Hi, my name is <span>Edison Freire.</span></p>
+        <h2>Aspiring developer.</h2>
         <p>
-          Hi, I'm Edison, a developer based in Brooklyn, NY. I'm currently a sophomore at Hunter College majoring in
-          computer science and minoring in mathematics. Programming is a huge passion of mine and I hope to make a
-          career of it.
+            I'm an student in Hunter College and aspiring web developer.
         </p>
-      </section>
-      <hr>
-      <section>
-        <h2>Portfolio</h2>
-        <p>Coming soon...</p>
-      </section>
-      <hr>
-      <section>
-        <h2>Contact Me</h2>
-        <form id="contact-form" name="contactform" action="">
+        <p>
+            Currently, I'm currently self learning fullstack web development.
+        </p>
+    </section>
+    <div class="gradient"></div>
+    <div class="section-blue">
+        <section id="projects">
+          <h2>Projects I'm proud of</h2>
+          <article>
+            <div class="text">
+              <h4>Latest Project</h4>
+              <h3>Wordle Clone</h3>
+              <p class="blackbox">Made a functional clone of the wordle game that was sold to New York Times for over 1 million dollars. Recreated the ui from scratch using plain HTML and CSS. Utilized an API to generate a new word and check if the word is valid. You can try playing the game <a href="https://codepen.io/edisonfreire/pen/Poxbjae">here</a> (Game doesn't work on mobile). The source code is available on my <a href="https://github.com/edisonfreire/wordle-clone">github</a>.
+              <h4>Technologies used include:</h4>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+              </ul>
+            </div>
+            <img src="./img/wordle-screenshot.png" alt="Screenshot of the world clone." />
+          </article>
+          <!-- <article class="reverse">
+            <div class="text">
+              <h4>Coming Soon</h4>
+              <h3>Coming Soon</h3>
+              <p class="blackbox">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt sit, enim rem dolores dignissimos ducimus blanditiis incidunt id aliquam reiciendis quae impedit repellendus nobis aspernatur, quo doloremque tempora repudiandae. Optio ducimus officia earum adipisci labore ad porro ab modi dolorum obcaecati. Neque quo error maiores modi qui dolores labore?
+              </p>
+              <h4>Technologies used include:</h4>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <img src="Lorem ipsum" alt="Lorem ipsum" />
+          </article>
+          <article>
+            <div class="text">
+              <h4>Lorem ipsum</h4>
+              <h3>Lorem ipsum </h3>
+              <p class="blackbox">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt sit, enim rem dolores dignissimos ducimus blanditiis incidunt id aliquam reiciendis quae impedit repellendus nobis aspernatur, quo doloremque tempora repudiandae. Optio ducimus officia earum adipisci labore ad porro ab modi dolorum obcaecati. Neque quo error maiores modi qui dolores labore?
+              </p>
+              <h4>Technologies used include:</h4>
+              <ul>
+                <li>Lorem ipsum </li>
+                <li>Lorem ipsum </li>
+              </ul>
+            </div>
+              <img src="Lorem ipsum" alt="Lorem ipsum" />
+          </article> -->
+        </section>
+      </div>
+    <div class="gradient"></div>
+    <div class="section-plum">
+        <section id="contact">
+            <h2>Contact me</h2>
+            <p>
+              Reach out for potential collaborations or to discuss new opportunities. Let's learn and grow together!
+            </p>
+            <p><a href="mailto:edisonfreire14@gmail.com" class="button">Email me</a></p>
+        </section>
+    </div>
+    <div class="gradient"></div>
+    <footer>
+        <h2>Edison Freire &middot; Developer</h2>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/edison-freire-434833206/" target="_blank">
+                    <span class="fab fa-linkedin" aria-hidden="true"></span>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/edisonfreire" target="_blank">
+                    <span class="fab fa-github-square" aria-hidden="true"></span>
+                    <span class="sr-only">Github</span>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:edisonfreire14@gmail.com">
+                    <span class="fas fa-envelope" aria-hidden="true"></span>
+                    <span class="sr-only">Email</span>
+                </a>
+            </li>
+        </ul>
+        <p><small>&copy; 2023 Edison Freire. All rights reserved.</small></p>
+    </footer>
 
-          <label for="name"><input type="text" id="name" name="name" placeholder="Name" required></label>
-
-          <label for="email"><input type="email" id="email" name="email" placeholder="Your E-mail" required></label>
-
-          <label for="message"><textarea name="message" id="message" cols="30" rows="10"
-              placeholder="Your Message Here..." required></textarea></label>
-
-          <input type="submit" value="Submit">
-        </form>
-        <p id="success-alert" class="success-alert">Success</p>
-        <p id="failure-alert" class="failure-alert">Failed, email edisonfreire14@gmail.com</p>
-      </section>
-    </main>
-  </div>
 </body>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-<script type="text/javascript">      (function () {
-    emailjs.init("eqCEta7b09W_b0p4v");
-  })();
-</script>
-
-<script src="script.js"></script>
 
 </html>
