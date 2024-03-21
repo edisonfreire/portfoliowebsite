@@ -2,73 +2,96 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://kit.fontawesome.com/342a54569f.js" crossorigin="anonymous"></script>
-    <title>Edison Freire's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://kit.fontawesome.com/342a54569f.js" crossorigin="anonymous"></script>
+  <title>Edison Freire's Portfolio</title>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>
-                <h1>
-                    <a href="index.html"><span class="fas fa-code" aria-hidden="true"></span> Edison
-                        Freire</a>
-                </h1>
-            </li>
-            <li><a href="index.html#projects">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-            <li>
-                <a href="https://www.linkedin.com/in/edison-freire-434833206/" target="_blank">
-                    <span class="fab fa-linkedin" aria-hidden="true"></span>
-                    <span class="sr-only">LinkedIn</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/edisonfreire" target="_blank">
-                    <span class="fab fa-github-square" aria-hidden="true"></span>
-                    <span class="sr-only">Github</span>
-                </a>
-            </li>
-            <li>
-                <a href="./Resume-1.pdf" target="_blank"
-                    class="button">Resume</a>
-            </li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li>
+        <h1>
+          <a href="index.html"><span class="fas fa-code" aria-hidden="true"></span> Edison
+            Freire</a>
+        </h1>
+      </li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li>
+        <a href="https://www.linkedin.com/in/edison-freire-434833206/" target="_blank">
+          <span class="fab fa-linkedin" aria-hidden="true"></span>
+          <span class="sr-only">LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/edisonfreire" target="_blank">
+          <span class="fab fa-github-square" aria-hidden="true"></span>
+          <span class="sr-only">Github</span>
+        </a>
+      </li>
+      <li>
+        <a href="./Resume-1.pdf" target="_blank" class="button">Resume</a>
+      </li>
+    </ul>
+  </nav>
 
-    <section id="intro">
-        <p class="name">Hi, my name is <span>Edison Freire.</span></p>
-        <h2>Aspiring developer.</h2>
-        <p>
-            I'm an student in Hunter College and aspiring web developer.
-        </p>
-        <p>
-            Currently, I'm currently self learning fullstack web development.
-        </p>
-    </section>
-    <div class="gradient"></div>
-    <div class="section-blue">
-        <section id="projects">
-          <h2>Projects I'm proud of</h2>
-          <article>
-            <div class="text">
-              <h4>Latest Project</h4>
-              <h3>Wordle Clone</h3>
-              <p class="blackbox">Made a functional clone of the wordle game that was sold to New York Times for over 1 million dollars. Recreated the ui from scratch using plain HTML and CSS. Utilized an API to generate a new word and check if the word is valid. You can try playing the game <a href="https://codepen.io/edisonfreire/pen/Poxbjae">here</a> (Game doesn't work on mobile). The source code is available on my <a href="https://github.com/edisonfreire/wordle-clone">github</a>.
-              <h4>Technologies used include:</h4>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-              </ul>
-            </div>
-            <img src="./img/wordle-screenshot.png" alt="Screenshot of the world clone." />
-          </article>
-          <!-- <article class="reverse">
+  <section id="intro">
+    <p class="name">Hi, my name is <span>Edison Freire.</span></p>
+    <h2>Aspiring developer.</h2>
+    <p>
+      I'm an student in Hunter College and aspiring web developer.
+    </p>
+    <p>
+      Currently, I'm currently self learning fullstack web development.
+    </p>
+  </section>
+  <div class="gradient"></div>
+  <div class="section-blue">
+    <section id="projects">
+      <h2>Projects I'm proud of</h2>
+      <article>
+        <div class="text">
+          <h4>Latest project</h4>
+          <h3>Full Stack Notes App</h3>
+          <p class="blackbox">
+            Developed a full-stack note-taking application using React for the frontend and Node.js with Express.js for the backend, allowing seamless addition, deletion, and updating of notes.
+            Implemented PostgreSQL for persistent data storage, ensuring notes remain accessible between sessions.
+            Utilized Prisma for efficient database interaction, eliminating the need for direct SQL commands, and deployed the PostgreSQL database using Elephant SQL.
+          </p>
+          <h4>Technologies used include:</h4>
+          <ul>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>PostgreSQL</li>
+            <li>Prisma</li>
+          </ul>
+        </div>
+        <img src="./img/notes-app-screenshot.png" alt="Screenshot of the fullstack notes app." />
+      </article>
+      <article class="reverse">
+        <div class="text">
+          <h4>Project</h4>
+          <h3>Wordle Clone</h3>
+          <p class="blackbox">Made a functional clone of the wordle game that was sold to New York Times for over 1
+            million dollars. Recreated the ui from scratch using plain HTML and CSS. Utilized an API to generate a new
+            word and check if the word is valid. You can try playing the game <a
+              href="https://codepen.io/edisonfreire/pen/Poxbjae">here</a> (Game doesn't work on mobile). The source code
+            is available on my <a href="https://github.com/edisonfreire/wordle-clone">github</a>.
+          <h4>Technologies used include:</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+          </ul>
+        </div>
+        <img src="./img/wordle-screenshot.png" alt="Screenshot of the world clone." />
+      </article>
+      <!-- <article class="reverse">
             <div class="text">
               <h4>Coming Soon</h4>
               <h3>Coming Soon</h3>
@@ -99,43 +122,43 @@
             </div>
               <img src="Lorem ipsum" alt="Lorem ipsum" />
           </article> -->
-        </section>
-      </div>
-    <div class="gradient"></div>
-    <div class="section-plum">
-        <section id="contact">
-            <h2>Contact me</h2>
-            <p>
-              Reach out for potential collaborations or to discuss new opportunities. Let's learn and grow together!
-            </p>
-            <p><a href="mailto:edisonfreire14@gmail.com" class="button">Email me</a></p>
-        </section>
-    </div>
-    <div class="gradient"></div>
-    <footer>
-        <h2>Edison Freire &middot; Developer</h2>
-        <ul>
-            <li>
-                <a href="https://www.linkedin.com/in/edison-freire-434833206/" target="_blank">
-                    <span class="fab fa-linkedin" aria-hidden="true"></span>
-                    <span class="sr-only">LinkedIn</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/edisonfreire" target="_blank">
-                    <span class="fab fa-github-square" aria-hidden="true"></span>
-                    <span class="sr-only">Github</span>
-                </a>
-            </li>
-            <li>
-                <a href="mailto:edisonfreire14@gmail.com">
-                    <span class="fas fa-envelope" aria-hidden="true"></span>
-                    <span class="sr-only">Email</span>
-                </a>
-            </li>
-        </ul>
-        <p><small>&copy; 2023 Edison Freire. All rights reserved.</small></p>
-    </footer>
+    </section>
+  </div>
+  <div class="gradient"></div>
+  <div class="section-plum">
+    <section id="contact">
+      <h2>Contact me</h2>
+      <p>
+        Reach out for potential collaborations or to discuss new opportunities. Let's learn and grow together!
+      </p>
+      <p><a href="mailto:edisonfreire14@gmail.com" class="button">Email me</a></p>
+    </section>
+  </div>
+  <div class="gradient"></div>
+  <footer>
+    <h2>Edison Freire &middot; Developer</h2>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/edison-freire-434833206/" target="_blank">
+          <span class="fab fa-linkedin" aria-hidden="true"></span>
+          <span class="sr-only">LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/edisonfreire" target="_blank">
+          <span class="fab fa-github-square" aria-hidden="true"></span>
+          <span class="sr-only">Github</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:edisonfreire14@gmail.com">
+          <span class="fas fa-envelope" aria-hidden="true"></span>
+          <span class="sr-only">Email</span>
+        </a>
+      </li>
+    </ul>
+    <p><small>&copy; 2023 Edison Freire. All rights reserved.</small></p>
+  </footer>
 
 </body>
 
